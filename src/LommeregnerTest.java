@@ -56,10 +56,39 @@ public class LommeregnerTest {
         //Arrange
         Lommeregner lommeregner = new Lommeregner();
 
+        //Secret 1
         //Act
-        double result = lommeregner.secret();
+        lommeregner.setSecretOperation(1);
+        double result1 = lommeregner.secret(5, 4);
 
         //Assert
-        Assert.assertEquals(20, result,0);
+        Assert.assertEquals(9, result1,0);
+
+        //Secret 2
+        //Act
+        lommeregner.setSecretOperation(2);
+        double result2 = lommeregner.secret(5, 4);
+
+        //Assert
+        Assert.assertEquals(1, result2,0);
+
+        //Secret 3
+        //Act
+        lommeregner.setSecretOperation(3);
+        double result3 = lommeregner.secret(5, 4);
+
+        //Assert
+        Assert.assertEquals(20, result3,0);
+
+        //Secret 4
+        //Act
+        lommeregner.setSecretOperation(4);
+        double result4 = lommeregner.secret(10, 2);
+
+        //Assert
+        Assert.assertEquals(5, result4,0);
+
+
     }
+
 }

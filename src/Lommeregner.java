@@ -1,4 +1,14 @@
 public class Lommeregner {
+    int secretOperation = (int)(Math.random() * (4) + 1);
+
+    public void setSecretOperation(int secretOperation) {
+        this.secretOperation = secretOperation;
+    }
+
+    public int getSecretOperation() {
+        return secretOperation;
+    }
+
     int sum(int a, int b) {
         return a+b;
     }
@@ -19,9 +29,8 @@ public class Lommeregner {
 
     int secret (int a, int b)  {
 
-        int s = (int)(Math.random() * (4) + 1);
-        System.out.println(s);
-        switch (s) {
+        System.out.println(secretOperation);
+        switch (secretOperation) {
             case 1:
                 sum(a, b);
                 return sum(a, b);
