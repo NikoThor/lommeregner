@@ -28,8 +28,9 @@ public class Lommeregner {
     }
 
     int secret (int a, int b)  {
-
+        System.out.println("hvilken metode valgte den");
         System.out.println(secretOperation);
+        System.out.println("Regne stykkets resultat");
         switch (secretOperation) {
             case 1:
                 sum(a, b);

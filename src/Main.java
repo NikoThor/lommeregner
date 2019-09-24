@@ -14,7 +14,7 @@ public class Main {
         System.out.println(lommeregner.multiplicere(2, 2 ));
         System.out.println("Hvad er 10 / 2 ?");
         System.out.println(lommeregner.division(10, 2 ));
-        System.out.println("Her er et random tal :) ");
+        System.out.println("Her er en random metode, samt  tal :) ");
         System.out.println(lommeregner.secret(5, 3));
 
     }
